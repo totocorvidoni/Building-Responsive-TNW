@@ -359,6 +359,7 @@ template {
 body {
   background: #f9f9f9;
   min-width: 480px;
+  padding-bottom: 2em;
 }
 
 /* Nav */
@@ -440,16 +441,17 @@ nav {
   padding: 0 20px;
 }
 
-/* Latest News */
+/* Content Grid */
 
-.latest-grid {
+.content-grid {
   display: grid;
   grid-gap: 15px;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin-top: 1em;
 
 }
 
-.latest-grid .article {
+.content-grid .content {
   height: 10em;
   background: #555;
 }
@@ -498,6 +500,52 @@ nav {
 .investment {
   background: #555;
 }
+
+/* Categories */
+
+.categories {
+  margin-top: 2em;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+}
+
+.category {
+  background: #555;
+  height: 35em;
+}
+
+/* Deals */
+
+.deals {
+  margin-top: 2em;
+}
+
+.deals-title {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Footer */
+
+footer {
+  margin-top: 2em;
+}
+
+.links {
+  height: 10em;
+  background: #222;
+}
+
+.legal {
+  height: 7em;
+  background: #000;
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 1023px) {
