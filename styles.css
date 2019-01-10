@@ -894,14 +894,34 @@ section h2 a:hover {
   position: absolute;
   top: 13px;
   width: 4px;
+}
 
-}
-}
 
 /* Deals */
 
 .deals {
-  margin-top: 2em;
+  margin-top: 3em;
+}
+
+.deals .content-grid img {
+  height: 13em;
+  object-fit: fill;
+  position: left;
+}
+
+.deals .content {
+  position: relative;
+}
+
+.price {
+  margin-top: .5em;
+  font-size: .9em;
+}
+
+.price span {
+  text-decoration: line-through;
+  color: #777;
+  font-size: .9em;
 }
 
 .deals-title {
@@ -911,22 +931,125 @@ section h2 a:hover {
   display: -o-flex;
   display: flex;
   justify-content: space-between;
+  -ms-align-items: center;
+  align-items: center;
+}
+
+.deals-title a {
+  text-decoration: none;
+  color: #f42;
+}
+
+.deals-title a:hover {
+  color: #000;
 }
 
 /* Footer */
 
 footer {
   margin-top: 2em;
+  font-family: "Exo", sans-serif;
+  font-size: .8em;
 }
 
 .links {
+  display: grid;
+  grid-gap: 2em;
+  grid-auto-flow: columns;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
   height: 10em;
-  background: #222;
+  background: #131313;
+}
+
+.links ul {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  list-style-type: none;
+}
+
+.links a {
+  text-decoration: none;
+  color: #999;
+  margin: 0 .5em;
+}
+
+.links a:hover {
+  color: #fff;
+}
+
+.social li {
+  padding: 0.7em;
+  margin: 0.3em;
+  border-radius: 50%;
+  background: #333;
+}
+
+.social li > * {
+  height: 16px;
+  width: 16px;
+}
+
+.facebook {
+  background-position: -272px -272px;
+}
+
+.twitter {
+  background-position: -1024px -1024px;
+}
+
+.youtube {
+  background-position: -1280px -1280px;
+}
+
+.instagram {
+  background-position: -416px -416px;
+}
+
+.pinterest {
+  background-position: -672px -672px;
+}
+
+.rss {
+  background-position: -816px -816px;
+}
+
+.email {
+  background-position: -576px -576px;
 }
 
 .legal {
   height: 7em;
   background: #000;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.legal p {
+  color: #999;
+  font-size: 1em;
+  width: 50%;
+  text-align: center;
+}
+
+.brand {
+  color: #fff;
+  font-weight: 700;
+}
+
+.love {
+  color: #f00;
+  font-weight: 700;
 }
 
 /* Media Queries */
@@ -1007,7 +1130,7 @@ footer {
   }
 
   .content-grid img {
-    height: 5em;
+    height: 5em !important;
   }
 
   .content-grid .picture {
