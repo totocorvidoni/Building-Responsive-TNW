@@ -747,6 +747,7 @@ section h2 a:hover {
   display: block;
   position: relative;
   margin-bottom: 0;
+  z-index: 5;
 }
 
 .company-logo {
